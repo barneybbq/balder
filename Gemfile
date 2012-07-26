@@ -21,6 +21,11 @@ end
 # PostgreSQL:
 gem 'pg'
 
+group :assets do
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'therubyracer', :platforms => :ruby
+end
+
 # -- Cloud storage
 # AWS S3 support. Can be disabled if using local file system instead of cloud storage.
 gem 'fog'
@@ -39,3 +44,7 @@ gem "mini_magick"
 # -- EXIF
 # Mini exif tool. Can be disabled. Remove exif_read and exif_write filters in photo model
 gem "mini_exiftool"
+
+group :production do
+	gem 'pg'
+end
