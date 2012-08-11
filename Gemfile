@@ -35,7 +35,7 @@ gem 'fog'
 gem "mini_magick"
 
 # ImageMagick:
-#gem "rmagick", :require => 'RMagick'
+gem "rmagick", :require => 'RMagick'
 
 # FreeImage:
 #gem "RubyInline"
